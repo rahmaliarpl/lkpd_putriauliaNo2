@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registrasi Akun Belajar</h2>
+        <p class="deskripsi">
+            Lengkapi formulir di bawah ini dengan benar.
+        </p>
+
+        <form>
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Masukkan nama lengkap" required>
+
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email"
+                   placeholder="nama@email.com" required>
+
+            <label for="password">Kata Sandi</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Minimal 8 karakter" minlength="8" required>
+
+            <label for="konfirmasi">Konfirmasi Kata Sandi</label>
+            <input type="password" id="konfirmasi" name="konfirmasi"
+                   placeholder="Ulangi kata sandi" minlength="8" required>
+
+            <label for="status">Status Pengguna</label>
+            <select id="status" name="status" required>
+                <option value="">Pilih status</option>
+                <option value="siswa">Siswa</option>
+                <option value="guru">Guru</option>
+                <option value="umum">Umum</option>
+            </select>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+
+</body>
+</html>
